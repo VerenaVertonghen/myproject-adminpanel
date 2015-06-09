@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+    <title>Cosy Care - Admin Panel</title>
+    <!-- <link rel="shortcut icon" href="src/images/logo/logo-b-alt-4.png"> -->
+
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body ng-app="starter">
+    <div class="wrapper-for-content-outside-of-footer">
+
+      <div ui-view></div>
+    </div><!-- wrapper-for-content-outside-of-footer -->
+    <footer>
+      <div class="social-div">
+        <ul class="social-ul">
+          <li><a href="https://github.com/VerenaVertonghen"><img src="src/images/social/white/github.png" class="footer-icon"></a></li>
+          <li><a href="#"><img src="src/images/social/white/tumblr.png" class="footer-icon"></a></li>
+          <li><a href="https://twitter.com/CosyCareApp"><img src="src/images/social/white/twitter.png" class="footer-icon"></a></li>
+          <li><a href="#"><img src="src/images/social/white/youtube.png" class="footer-icon"></a></li>
+          <li><a href="#"><img src="src/images/social/white/vimeo.png" class="footer-icon"></a></li>
+        </ul>
+      </div>
+    </footer>
+    
+  <!--LIBRARIES-->
+  <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/angular/angular.js"></script>
+  <script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="lib/angular-base64/angular-base64.js"></script>
+  <script type="text/javascript" src="lib/angular-resource/angular-resource.js"></script>
+  <script type="text/javascript" src="lib/angular-local-storage/dist/angular-local-storage.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+  <!-- <script src="scripts/parallax.js"></script> -->
+  <script src="scripts/main.js"></script>
+
+    <script src="scripts/wow.js"></script>
+    <script>
+     new WOW().init();
+    </script>
+
+  <!--ANGULAR-->
+  <!--<script type="text/javascript" src="dist/app.js"></script>-->
+  <script type="text/javascript" src="app/app.js"></script>
+
+ <!-- your app's js -->
+  <script src="app/app.js"></script>
+  <script src="app/services.js"></script>
+  <script src="app/directives.js"></script>
+  <script src="app/filters.js"></script>
+
+  <!-- services -->
+  <script src="app/user/UserService.js"></script>
+  <script src="app/category/CategoryService.js"></script>
+  <script src="app/notification/NotificationService.js"></script>
+  <script src="app/state/StateService.js"></script>
+
+  <!-- controllers -->
+  <script src="app/app/AppCtrl.js"></script>
+
+  <script src="app/user/BaseUserCtrl.js"></script>
+  <script src="app/user/UserCtrl.js"></script>
+  <script src="app/user/LoginCtrl.js"></script>
+  <script src="app/user/RegisterCtrl.js"></script>
+
+  <script src="app/category/CategoryCtrl.js"></script>
+  
+  <script src="app/notification/BaseNotificationCtrl.js"></script>
+  <script src="app/notification/NotificationCtrl.js"></script>
+  <script src="app/notification/CreateCtrl.js"></script>
+  <script src="app/notification/NotificationsCtrl.js"></script>
+  <script src="app/notification/Notification1Ctrl.js"></script>
+  <script src="app/notification/Notification2Ctrl.js"></script>
+  <script src="app/notification/NotificationFinalCtrl.js"></script>
+
+  <script src="app/state/BaseStateCtrl.js"></script>
+  <script src="app/state/StateCtrl.js"></script>
+  <script src="app/state/StatesCtrl.js"></script>
+  <script src="app/state/State1Ctrl.js"></script>
+  <script src="app/state/State2Ctrl.js"></script>
+  <script src="app/state/State3Ctrl.js"></script>
+  <script src="app/state/StateFinalCtrl.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,42 @@
+@mixin my-button($text, $background){
+	border: none;
+	font-size: inherit;
+	font-family: $regular-font;
+	cursor: pointer;
+	padding: 20px 40px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	color:$text !important;
+	background:$background;
+	//border:none;
+	@include my-shadow($background);
+	@include rounded($base-border-radius);
+
+
+	&:hover{
+		background: darken($background,10%);
+		border:none;
+	}
+}
+
+// .btn {
+// 	@include my-button($light, $dark);
+// }
+
+.btn-dark {
+	@include my-button($light, $dark);
+}
+
+.btn-positive {
+	@include my-button($light, $positive);
+}
+
+.btn-assertive {
+	@include my-button($light, $assertive);
+}

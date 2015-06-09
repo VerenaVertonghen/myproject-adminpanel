@@ -1,0 +1,118 @@
+$parallax-window-height: 30em;
+$parallax-background-height: $parallax-window-height * 1.5;
+
+.hero-logo img {
+  height: 10em;
+}
+
+.hero-logo{
+  border:none !important;
+}
+
+.parallax-window {
+  max-height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  h1 {
+    color: $dark;
+    font-size: 3.5em;
+    margin-bottom: 10em;
+  }
+}
+
+.parallax-static-content {
+  color: #9A9A8A;
+  padding: 8em 0;
+  position: relative;
+  z-index: 9;
+}
+
+.parallax-background {
+  background: url("../../src/images/photography/pic.jpg") repeat;
+  // background: url("../../src/images/pattern/flyers.png") repeat;
+  //-webkit-filter: blur(2px);
+  -webkit-filter: brightness(60%);
+  // opacity: 0.9;
+  // filter: alpha(opacity=90); /* For IE8 and earlier */
+  background-size: cover;
+  background-color: $dark;
+  //background-color: $positive;
+  background-position: top;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 4;
+  width: 100%;
+}
+
+
+.parallax-window2 {
+  max-height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  h1 {
+    color: $dark;
+    font-size: 3.5em;
+    margin-bottom: 10em;
+  }
+}
+
+.parallax-static-content2 {
+  //color: #9A9A8A;
+  color: $light;
+  padding: 8em 0;
+  position: relative;
+  z-index: 9;
+}
+
+.parallax-background2 {
+  background: url("../../src/images/photography/pic1.jpg") repeat;
+  background-size: cover;
+  background-color: $dark;
+  background-position: top;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 4;
+  width: 100%;
+}
+
+
+
+.parallax-window3 {
+  max-height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  h1 {
+    color: $dark;
+    font-size: 3.5em;
+    margin-bottom: 10em;
+  }
+}
+
+.parallax-static-content3 {
+  // color: #9A9A8A;
+  color: $light;
+  padding: 8em 0;
+  position: relative;
+  z-index: 9;
+}
+
+.parallax-background3 {
+  background: url("../../src/images/photography/pic2.jpg") repeat;
+  // background: url("../../images/pattern/flyers.png") repeat;
+  background-size: cover;
+  background-color: $dark;
+  background-position: top;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 4;
+  width: 100%;
+}

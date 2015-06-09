@@ -1,0 +1,138 @@
+/* VARIABLES
+-------------------------*/
+
+// Color swatches FLAT UI
+$turquoise:                 #1abc9c;
+$green-sea:                 #16a085;
+
+$emerald:                   #2ecc71;
+$nephritis:                 #27ae60;
+
+$peter-river:               #3498db;
+$belize-hole:               #2980b9;
+
+$amethyst:                  #9b59b6;
+$wisteria:                  #8e44ad;
+
+$wet-asphalt:               #34495e;
+$midnight-blue:             #2c3e50;
+
+$sun-flower:                #f1c40f;
+$orange:                    #f39c12;
+
+$carrot:                    #e67e22;
+$pumpkin:                   #d35400;
+
+$alizarin:                  #e74c3c;
+$pomegranate:               #c0392b;
+
+$clouds:                    #f5f7fa;
+$silver:                    #e6e9ed;
+
+$concrete:                  #656d78;
+$asbestos:                  #434a54;
+
+//Color swatches FLAT UI 2
+$deep-sea:                  #112539;
+$grapefruit:                #da4453;
+$mint:                      #37bc9b;
+$lemon:                     #fbcf61;
+$strawberry:                #EB4D5C;
+$melon:                     #A6D6A1;
+$aubergine:                 #3C3865;
+$light-chrome:              darken($silver,10%);
+$chrome:                    darken($silver,30%);
+
+// Social colors
+$social-pinterest:          #cb2028;
+$social-linkedin:           #0072b5;
+$social-stumbleupon:        #ed4a13;
+$social-googleplus:         #2d2d2d;
+$social-facebook:           #2f4b93;
+$social-twitter:            #00bdef;
+
+//Neutral colours
+$white: 					#FFFFFF;
+$black: 					#000000;
+$gray:                      $concrete;
+$gray-light:                $silver;
+$light: 					$clouds;
+
+// Brand colors
+$dark:                      $deep-sea !default;
+$positive:                  $green-sea !default;
+$light:                     $white !default;
+$stable:                    $clouds !default;
+$calm:                      $silver !default;
+$balanced:                  $green-sea !default;
+$energized:                 $lemon !default;
+$assertive:                 $grapefruit !default;
+$royal:                     $wisteria !default;
+
+
+// Background Color
+$base-background-color: 	$white;
+
+// Font Colors
+$base-font-color: 			$dark;
+$base-accent-color: 		$mint;
+
+// Link Colors
+$base-link-color: 			$dark;
+$hover-link-color: 			darken($base-accent-color, 20);
+$base-button-color: 		$base-link-color;
+$hover-button-color: 		$hover-link-color;
+
+// Breakpoints
+$medium-screen: 			em(640);
+$large-screen: 				em(860);
+$medium-screen-up: 			new-breakpoint(min-width $medium-screen 4);
+$large-screen-up: 			new-breakpoint(min-width $large-screen 8);
+
+
+// Typography
+$black-font: 				'MontserratBlack', Helvetica, Arial, sans-serif;
+$bold-font: 				'MontserratBold', Helvetica, Arial, sans-serif;
+$regular-font:				'MontserratRegular', Helvetica, Arial, sans-serif;
+$light-font:				'MontserratLight', Helvetica, Arial, sans-serif;
+$hairline-font:				'MontserratHairline', Helvetica, Arial, sans-serif;
+//$serif: 					'Josefin Slab', serif;
+$sans-serif: 				$light-font;
+
+$heading-font: 				$regular-font;
+$body-font: 				$light-font;
+
+$base-font-family: 			$body-font;
+$header-font-family: 		$heading-font;
+
+// Font Sizes
+$base-font-size: 			1em;
+$h1-font-size: 				$base-font-size * 2.25;
+$h2-font-size: 				$base-font-size * 2;
+$h3-font-size: 				$base-font-size * 1.75;
+$h4-font-size: 				$base-font-size * 1.5;
+$h5-font-size:				$base-font-size * 1.25;
+$h6-font-size:				$base-font-size;
+
+// Line height
+$base-line-height: 			1.5;
+$header-line-height: 		1.25;
+
+// Other Sizes
+$base-border-radius: 		4px;
+$base-spacing: 				$base-line-height * 1em;
+$base-z-index: 				0;
+
+// Borders
+$base-border-color: 		$mint;
+$base-border: 				1px solid $base-border-color;
+
+// Forms
+$form-border-color: 		$base-border-color;
+$form-border-color-hover: 	darken($base-border-color, 10);
+$form-border-color-focus:	$base-accent-color;
+$form-border-radius:		$base-border-radius;
+$form-box-shadow:			inset 0 1px 3px rgba(black,0.06);
+$form-box-shadow-focus: 	$form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: 			$base-font-size;
+$form-font-family: 			$base-font-family;

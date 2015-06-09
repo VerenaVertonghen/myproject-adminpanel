@@ -1,0 +1,67 @@
+@mixin my-padding(){
+	padding: 2em 1em;
+}
+
+#content-button{
+	@include outer-container();
+	@include my-padding();
+}
+
+#login{
+  @include outer-container();
+  @include my-padding();
+}
+
+#profile{
+	@include outer-container();
+	@include my-padding();
+	text-align:center;
+}
+
+#create{
+  @include outer-container();
+  @include my-padding();
+  text-align:center;
+}
+
+#all-notifications{
+	@include outer-container();
+	@include my-padding();
+}
+
+#notification-text{
+  height: 6em;
+}
+
+.video-wrapper {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative; }
+  .video-wrapper embed,
+  .video-wrapper object,
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;*/
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    padding: 3em;
+    width: 100%;
+    height: 100%;
+}
+
+.button-margin{
+  margin-bottom: 2em;
+}
+
+.footer-icon{
+  width: 2.5em;
+}

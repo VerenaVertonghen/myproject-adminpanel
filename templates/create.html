@@ -1,0 +1,89 @@
+<header class="centered-navigation" role="banner">
+  <div class="centered-navigation-wrapper">
+    <a href="index.html" class="mobile-logo">
+      <img src="src/images/logo/logowhite.svg" alt="Logo image">
+    </a>
+    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+        <li class="nav-link ">
+          <a href="#/notifications">Notifications</a>
+        </li>
+        <li class="nav-link">
+          <a href="#/profile">Profile</a>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a id="active-link"  href="#/create">Create</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div id="js-parallax-window" class="parallax-window">
+  <div class="parallax-static-content">
+    <a href="" class="hero-logo wow bounceIn"><img src="src/images/logo/logowhite.svg" alt="me"></a>
+    <p id="tagline">Create a notification</p>
+    <br>
+    
+  </div>
+  <div id="js-parallax-background" class="parallax-background"></div>
+</div>
+<div id="create">
+  <form name="notificationForm" ng-submit="postNotification(notificationForm.$valid)" novalidate>
+
+  <h3>What type of notification?</h3>
+
+  <span class="input-label">Notification</span>
+  <div id="dropdown">
+    <select class="cd-select" id="cd-dropdown" ng-model="notification.type">
+      <option value="advice">
+        advice
+      </option>
+      <option value="quote">
+        quote
+      </option>
+      <option value="question">
+        question
+      </option>
+      <option value="reminder">
+        reminder
+      </option>
+    </select>
+  </div>
+
+  <h3>Give it some nice content!</h3>
+
+  <span class="input-label">Title</span>
+  <div id="border-input">
+  <input type="text" ng-model="notification.title" placeholder="Awesome title" name="title" ng-minlength="2" ng-maxlength="40" required>
+  </div>
+  <p ng-show="notificationForm.title.$invalid && !notificationForm.title.$pristine" class="help-block">You have to fill in a title.</p>
+  <p ng-show="notificationForm.title.$valid" class="success-block">Check!</p>
+
+  <span class="input-label">Text</span>
+  <textarea name="text" type="text" id="notification-text" ng-model="notification.text" placeholder="Go ahead and type some content. Don't forget to do a spelling check before posting! A little heads up for you, you can type up to 500 characters in here." ng-minlength="5" ng-maxlength="500" required></textarea>
+  <p ng-show="notificationForm.text.$invalid && !notificationForm.text.$pristine" class="help-block">You have to fill in some text.</p>
+  
+  <h3>What type of category?</h3>
+
+  <span class="input-label">Category</span>
+  <div class="list">
+    <label class="item item-input item-select">
+      <select ng-model="notification.categoryid">
+        <option ng-repeat="category in allCategories"  value="{{category._id}}">{{category.name}}</option>
+      </select>
+    </label>
+  </div>
+
+  <!-- <a href="#" class="btn-dark">Create</a> -->
+  <div class="button-margin">
+  <button type="submit" class="btn-dark" ng-disabled="notificationForm.$invalid">
+    Create
+  </button> 
+  </div>
+  <div ng-show="submitSuccess" class="flash-positive">
+      <p>You have created a new notification. Users will now be able to receive this notification. Thank you for helping!</p>
+  </div>
+</div>
+<script src="scripts/main.js"></script>

@@ -1,0 +1,60 @@
+// Vendors and external stylesheets
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+
+// Utilities
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/helpers";
+ 
+// Layout related stylesheets
+ 
+// Components and modules
+@import "components/icons";
+@import "components/anchor";
+@import "components/button";
+@import "components/footer";
+@import "components/grid-items";
+@import "components/modal";
+@import "components/parallax";
+@import "components/points";
+@import "components/skill-items";
+@import "components/top-nav";
+@import "components/bullets";
+@import "components/dropdown";
+
+
+// Page-specific stylesheets
+@import "pages/mylayout";
+ 
+// Themes 
+@import "themes/theme";
+
+body{
+	margin: 0;
+	word-wrap:break-word;
+
+	/* DEVELOPMENT 
+	-------------------*/
+	// @include media($mobile-small){
+	// background: lighten(red,40%);
+	// };
+	// @include media($mobile-portrait){
+	// background: lighten(orange,40%);
+	// };
+	// @include media($mobile-landscape){
+	// background: lighten(yellow,40%);
+	// };
+	// @include media($medium-screen){
+	// background: lighten(green,60%);
+	// };
+	// @include media($large-screen){
+	// background: lighten(blue,40%);
+	// };
+	// @include media($xlarge-screen){
+	// background: lighten(purple,60%);
+	// };
+
+}

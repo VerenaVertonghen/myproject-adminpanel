@@ -1,0 +1,43 @@
+<div id="js-parallax-window" class="parallax-window">
+  <div class="parallax-static-content">
+    <a href="" class="hero-logo wow bounceIn"><img src="src/images/logo/logowhite.svg" alt="me"></a>
+    <p id="tagline">Admin panel</p>
+  </div>
+  <div id="js-parallax-background" class="parallax-background"></div>
+</div>
+<br>
+
+<div id="login">
+  <!-- <div id="login-img"><img src="img/logo/logo.svg"></div> -->
+  <div class="list">
+    <label class="item item-input">
+      <span class="input-label">Username:</span>
+      <input type="text" ng-model="user.username">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Password:</span>
+      <input type="{{inputType}}" ng-model="user.password"/>
+    </label>
+    <!-- <div id="password-toggle">
+      <li class="item item-checkbox">
+        <label class="checkbox" >
+          <input type="checkbox" ng-click="hideShowPassword()"/>
+          
+        </label>
+        Show password
+      </li>
+    </div> -->
+  </div>
+  <div class="button-padding">
+    <button class="btn" ng-click="login(user)">
+      Login
+    </button> 
+  </div>
+  <br>
+  <div ng-show="loginError" class="flash-error">
+      Something went wrong, did you fill in the correct username and password? 
+  </div>
+  <div ng-show="adminError" class="flash-error">
+      This account doesn't seem to be one for an admin. Did you use the correct account? If you would like to become an admin you can contact us by sending a mail to <a href="mailto:cosycare.app@gmail.com">cosycare.app@gmail.com</a>.
+  </div>
+</div>

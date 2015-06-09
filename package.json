@@ -1,0 +1,33 @@
+{
+  "name": "Adminpanel",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cache": "latest",
+    "gulp-run": "latest",
+    "gulp-concat": "latest",
+    "gulp-ng-templates": "latest",
+    "gulp-uglify": "latest",
+    "gulp-zip": "latest",
+    "gulp-if": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-jshint": "latest",
+    "browser-sync": "latest",
+    "gulp-livereload": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-ruby-sass": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "gulp-minify-html": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-debug": "latest",
+    "node-bourbon": "latest",
+    "node-neat": "latest",
+    "del": "latest"
+  }
+}
