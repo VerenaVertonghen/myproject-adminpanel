@@ -1,4 +1,5 @@
-<header class="centered-navigation" role="banner">
+<div ng-show="showadmin">
+  <header class="centered-navigation" role="banner">
   <div class="centered-navigation-wrapper">
     <a href="index.html" class="mobile-logo">
       <img src="src/images/logo/logowhite.svg" alt="Logo image">
@@ -21,24 +22,51 @@
   </div>
 </header>
 
-  <div id="js-parallax-window" class="parallax-window">
-        <div class="parallax-static-content">
-          <a href="" class="hero-logo wow bounceIn"><img src="src/images/logo/logowhite.svg" alt="me"></a>
-          <p id="tagline">Overview of all the notifications</p>
-          <br>
-          <!-- <a href="#" class="btn-white">Create a notification</a> -->
-        </div>
-        <div id="js-parallax-background" class="parallax-background"></div>
-      </div>
-      <br>
+<!-- <div id="js-parallax-window" class="parallax-window">
+  <div class="parallax-static-content">
+    <a href="" class="hero-logo wow bounceIn"><img src="src/images/logo/logowhite.svg" alt="me"></a>
+    <p id="tagline">Overview of all the notifications</p>
+  </div>
+  <div id="js-parallax-background" class="parallax-background"></div>
+</div> -->
 
       <div id="all-notifications">
-          <!-- <h1>View all the notifications</h1> -->
-          <div class="flash-error notification-layout" ng-show="allNotifications.length==0">
+<!--         <div id="buttons">
+          <div>
+          <a href ng-click="search = !search" class="btn btn-small ghost-button-inv" ng-class="{ active: search }">Zoeken</a>
+          <a href ng-click="filter = !filter" class="btn btn-small ghost-button-inv" ng-class="{ active: filter }">Sorteren</a>
+          </div>
+          <br>
+          <div class="search-bar" ng-show="search">
+             <form role="search">
+              <input ng-model="searchNotification" type="search" placeholder="Zoek een challenge" />
+              <button type="submit">
+                <img src="src/images/icons/search.png" alt="Search Icon">
+              </button>
+            </form>
+          </div>
+           <br>
+           <div id="tabs" ng-show="filter">
+            <a href="" ng-class="{ active: all }" ng-click="changeStatus('all')">alles</a>
+            <a href="" ng-class="{ active: open }" ng-click="changeStatus('open')">open</a>
+            <a href="" ng-class="{ active: closed }" ng-click="changeStatus('closed')">gesloten</a>
+          </div>          
+        </div> -->
+
+        <div class="search-bar">
+           <form role="search">
+            <input ng-model="searchNotification" type="search" placeholder="Zoek een challenge" />
+            <button type="submit">
+              <img src="src/images/icons/search.png" alt="Search Icon">
+            </button>
+          </form>
+        </div>
+        <!-- <h1>View all the notifications</h1> -->
+        <div class="flash-error notification-layout" ng-show="allNotifications.length==0">
           <p><span>Er zijn nog geen notificaties.</span></p>
         </div>
         <ul class="bullets">
-            <li class="bullet three-col-bullet" ng-repeat="notification in allNotifications">
+            <li class="bullet three-col-bullet" ng-repeat="notification in allNotifications | filter:searchNotification">
               <div class="bullet-icon center">
                 <img ng-src="src/images/expressions/{{notification.category.name}}.svg" alt="">
               </div>
@@ -53,4 +81,5 @@
             </li>
         </ul>
       </div>
+</div>
 <script src="scripts/main.js"></script>

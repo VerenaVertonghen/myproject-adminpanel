@@ -2,6 +2,15 @@
 	padding: 2em 1em;
 }
 
+#buttons{
+  margin-top: 3em;
+  margin-bottom:2em;
+  @include clearfix();
+  @include outer-container();
+  padding: 0em 0.1em;
+  text-align: center;
+}
+
 #content-button{
 	@include outer-container();
 	@include my-padding();
@@ -21,7 +30,11 @@
 #create{
   @include outer-container();
   @include my-padding();
-  text-align:center;
+  text-align:left;
+
+  input[type=text], textarea{
+    max-width: $form-width;
+  }
 }
 
 #all-notifications{
@@ -30,7 +43,7 @@
 }
 
 #notification-text{
-  height: 6em;
+  height: 10em;
 }
 
 .video-wrapper {

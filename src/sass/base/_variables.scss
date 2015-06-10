@@ -69,6 +69,8 @@ $energized:                 $lemon !default;
 $assertive:                 $grapefruit !default;
 $royal:                     $wisteria !default;
 
+$form-width: 40em;
+
 
 // Background Color
 $base-background-color: 	$white;
@@ -124,7 +126,7 @@ $base-spacing: 				$base-line-height * 1em;
 $base-z-index: 				0;
 
 // Borders
-$base-border-color: 		$mint;
+$base-border-color: 		$silver;
 $base-border: 				1px solid $base-border-color;
 
 // Forms
