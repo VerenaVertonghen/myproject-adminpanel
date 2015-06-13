@@ -4476,6 +4476,20 @@ a {
         box-sizing: border-box;
         display: block; } }
 
+#search {
+  text-align: center;
+  max-width: 87.5em;
+  margin-left: auto;
+  margin-right: auto; }
+  #search:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #search:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 #buttons {
   margin-top: 3em;
   margin-bottom: 2em;

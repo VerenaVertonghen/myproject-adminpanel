@@ -25,6 +25,7 @@
     $search-bar-background: $navigation-background;
     padding: 1em 2em;
     width: 100%;
+    
 
     @include media($large-screen) {
       width: 80%;

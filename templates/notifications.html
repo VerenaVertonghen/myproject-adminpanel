@@ -50,23 +50,26 @@
             <a href="" ng-class="{ active: all }" ng-click="changeStatus('all')">alles</a>
             <a href="" ng-class="{ active: open }" ng-click="changeStatus('open')">open</a>
             <a href="" ng-class="{ active: closed }" ng-click="changeStatus('closed')">gesloten</a>
-          </div>          
+          </div>     
         </div> -->
-
-        <div class="search-bar">
-           <form role="search">
+        <div id="search">
+          <div class="search-bar">
+            <form role="search">
             <input ng-model="searchNotification" type="search" placeholder="Zoek een challenge" />
             <button type="submit">
               <img src="src/images/icons/search.png" alt="Search Icon">
             </button>
-          </form>
+            </form>
+          </div> 
         </div>
+
+        
         <!-- <h1>View all the notifications</h1> -->
         <div class="flash-error notification-layout" ng-show="allNotifications.length==0">
           <p><span>Er zijn nog geen notificaties.</span></p>
         </div>
         <ul class="bullets">
-            <li class="bullet three-col-bullet" ng-repeat="notification in allNotifications | filter:searchNotification">
+            <li class="bullet three-col-bullet" ng-repeat="notification in allNotifications | filter:searchNotification" ng-if="notification.category.name != 'app'">
               <div class="bullet-icon center">
                 <img ng-src="src/images/expressions/{{notification.category.name}}.svg" alt="">
               </div>

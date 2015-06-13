@@ -35,7 +35,7 @@
 
   <h3>What type of notification?</h3>
 
-  <span class="input-label">Notification</span>
+  <!-- <span class="input-label">Notification</span> -->
   <div class="dropdown-center">
   <select id="cd-dropdown" class="cd-select" ng-model="notification.type">
     <option value="" disabled selected>Select a notification</option>
@@ -70,12 +70,12 @@
   
   <h3>What type of category?</h3>
 
-  <span class="input-label">Category</span>
+  <!-- <span class="input-label">Category</span> -->
   <div class="dropdown-center">
     <label class="item item-input item-select">
       <select id="cd-dropdown" class="cd-select" ng-model="notification.categoryid">
         <option value="" disabled selected>Select a category</option>
-        <option ng-repeat="category in allCategories"  value="{{category._id}}">{{category.name}}</option>
+        <option ng-repeat="category in allCategories" ng-if="category.name != 'app'" value="{{category._id}}">{{category.name}}</option>
       </select>
     </label>
   </div>
